@@ -48,22 +48,27 @@
 
 
 .card li.card1::before{
-    background-image: url('images/1.png');
+    /* background-image: url('images/1.png'); */
+    background-color: rgb(187, 47, 47);
 }
 .card li.card2::before{
-    background-image: url('images/2.png');
+    /* background-image: url('images/2.png'); */
+    background-color: rgb(212, 148, 50);
 }
 
 .card li.card3::before{
-    background-image: url('images/3.png');
+    /* background-image: url('images/3.png'); */
+    background-color: rgb(25, 78, 128);
 }
 
 .card li.card4::before{
-    background-image: url('images/4.png');
+    /* background-image: url('images/4.png'); */
+    background-color: rgb(48, 105, 57);
 }
 
 .card li.card5::before{
-    background-image: url('images/5.png');
+    /* background-image: url('images/5.png'); */
+    background-color: rgb(211, 163, 211);
 }
 
 
