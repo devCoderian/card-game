@@ -1,0 +1,74 @@
+.main{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 10%;
+}
+.main .card-cnt{
+    max-width: 550px;
+    min-height: 200px;
+    /* display: flex; */
+    margin:auto;
+}
+
+
+.card-cnt .card{
+    margin-top: auto;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.card li{ 
+    position:relative;
+    width: 100px;
+    height: 100px;
+/* 블러 5px */
+    transition: .5s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.card li.click{
+    transform:rotateY(0deg);
+}
+
+.card li::after, .card li::before{
+    display: block;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+}
+
+
+.card li.card1::before{
+    background-image: url('/images/1.png');
+}
+.card li.card2::before{
+    background-image: url('/images/2.png');
+}
+
+.card li.card3::before{
+    background-image: url('/images/3.png');
+}
+
+.card li.card4::before{
+    background-image: url('/images/4.png');
+}
+
+.card li.card5::before{
+    background-image: url('/images/5.png');
+}
+
+
+.card li::after{
+    background-color: black;
+    border: 1px solid #fff;
+    transform: rotateY(180deg);
+}
